@@ -47,16 +47,16 @@ int main()
 {
 
     ios::sync_with_stdio(0);
-    cout<<"enter the number of points\n";
+    cout<<"Number of points: \n";
     int n;
     cin>>n;
     pii a[n];
-    cout<<"enter the points\n";
+    cout<<"enter all the points \n";
     for(int i=0;i<n;i++)
     	cin>>a[i].first>>a[i].second;
     if(n<3)
 	{
-		cout<<"convex hull not possible\n";
+		cout<<"convex hull is not possible\n";
 		return 0;
 	}
 	int mini=0;
@@ -82,7 +82,7 @@ int main()
 	}
 	if(sz(final)<3)
 	{
-		cout<<"convex hull not possible\n";
+		cout<<"convex hull is not possible\n";
 		return 0;
 	}
 	stack<pii>s;
